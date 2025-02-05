@@ -1,0 +1,164 @@
+{
+	"info": {
+		"_postman_id": "01a83989-a023-4f2e-8a96-941a73007bfb",
+		"name": "BankingApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "35188179"
+	},
+	"item": [
+		{
+			"name": "http://localhost:7171/api/accounts",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"accountHolderName\": \"Sriyansh\",\r\n    \"balance\": 5000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7171/api/accounts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7171",
+					"path": [
+						"api",
+						"accounts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:7171/api/accounts/2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7171/api/accounts/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7171",
+					"path": [
+						"api",
+						"accounts",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:7171/api/accounts/3/deposit",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"amount\": 3000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7171/api/accounts/3/deposit",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7171",
+					"path": [
+						"api",
+						"accounts",
+						"3",
+						"deposit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:7171/api/accounts/3/withdraw",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"amount\": 2000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7171/api/accounts/3/withdraw",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7171",
+					"path": [
+						"api",
+						"accounts",
+						"3",
+						"withdraw"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:7171/api/accounts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7171/api/accounts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7171",
+					"path": [
+						"api",
+						"accounts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:7171/api/accounts/3/delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7171/api/accounts/3/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7171",
+					"path": [
+						"api",
+						"accounts",
+						"3",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
